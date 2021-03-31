@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/TMC_Orange"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal"
+        >
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="Click to Draw route to Airport" />
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:layout_weight="5"
+        android:textColor="@color/TMC_White"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text=" Your Current Status:" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="14sp"
+            android:textColor="@color/TMC_White"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:textAllCaps="true"
+            android:layout_weight=".5"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/deliveryUserStatus"
+            android:fontFamily="@font/open_sans_bold"
+            android:text=" Available " />
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="6dp"
+
+            android:id="@+id/newOrdersSync_Layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:foregroundGravity="bottom"
+                android:visibility="visible"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@mipmap/orderssync" />
+
+        </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+<ListView
+        android:id="@+id/assignedOrders_ListView"
+        android:layout_width="match_parent"
+        android:divider="@color/TMC_Hint_Color"
+        android:dividerHeight="7dp"
+        android:scrollIndicators="none"
+        android:layout_height="match_parent"
+    android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/dashboard_layout"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/dashboard_orange" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textColor="@color/TMC_Orange"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Dashboard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/settings_layout"
+
+            android:orientation="vertical"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/settings_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/settings_black" />
+
+            <TextView
+                android:id="@+id/settings_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textColor="@color/TMC_Primary_Text_Color"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Settings" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loadingpanelmask_dailyItemWisereport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/TMC_proressbar_mask_Color"
+            android:alpha="0.85"
+
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/loadingPanel_dailyItemWisereport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="visible">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/loadinganim_layout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/TMC_Orange"
+                app:indicatorName="BallPulseIndicator" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

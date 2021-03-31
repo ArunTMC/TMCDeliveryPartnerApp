@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TMCDeliveryPartnerApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/TMC_Orange</item>
+        <item name="colorPrimaryVariant">@color/TMC_Button_background_Color</item>
+        <item name="colorOnPrimary">@color/TMC_White</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/TMC_Button_background_Color</item>
+        <item name="colorSecondaryVariant">@color/TMC_Button_background_Color</item>
+        <item name="colorOnSecondary">@color/TMC_White</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

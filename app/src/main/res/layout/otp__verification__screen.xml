@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".Otp_Verification_Screen">
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="309dp"
+    app:srcCompat="@mipmap/accountscreen_image" />
+
+<TextView
+    android:id="@+id/UserInstructionText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+    android:text="@string/UserInstructionText"
+    android:textColor="@color/TMC_Primary_Text_Color" />
+
+<TextView
+    android:id="@+id/userPhoneNumberTextview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:textColor="@color/TMC_Primary_Text_Color"
+    android:layout_marginStart="10dp"
+    />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/otp_first_et"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_marginBottom="10dp"
+        android:digits="0123456789"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="6"
+        android:singleLine="false"
+        android:textColor="@color/TMC_Primary_Text_Color"
+        android:textColorHint="@color/TMC_Hint_Color"
+        android:textCursorDrawable="@drawable/abc_vector_test" />
+
+    <EditText
+        android:id="@+id/otp_second_et"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_marginBottom="10dp"
+        android:digits="0123456789"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/TMC_Primary_Text_Color"
+        android:textColorHint="@color/TMC_Hint_Color"
+        android:textCursorDrawable="@drawable/abc_vector_test" />
+
+    <EditText
+        android:id="@+id/otp_third_et"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_marginBottom="10dp"
+        android:digits="0123456789"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/TMC_Primary_Text_Color"
+        android:textColorHint="@color/TMC_Hint_Color"
+        android:textCursorDrawable="@drawable/abc_vector_test" />
+
+    <EditText
+        android:id="@+id/otp_fourth_et"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_marginBottom="10dp"
+        android:digits="0123456789"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/TMC_Primary_Text_Color"
+        android:textColorHint="@color/TMC_Hint_Color"
+        android:textCursorDrawable="@drawable/abc_vector_test" />
+
+
+    <EditText
+        android:id="@+id/otp_fifth_et"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_marginBottom="10dp"
+        android:digits="0123456789"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/TMC_Primary_Text_Color"
+        android:textColorHint="@color/TMC_Hint_Color"
+        android:textCursorDrawable="@drawable/abc_vector_test" />
+    <EditText
+        android:id="@+id/otp_sixth_et"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_marginBottom="10dp"
+        android:digits="0123456789"
+        android:drawablePadding="7dp"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="@color/TMC_Primary_Text_Color"
+        android:textColorHint="@color/TMC_Hint_Color"
+        android:textCursorDrawable="@drawable/abc_vector_test" />
+
+
+
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/verifyOtp_button"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="end"
+    android:background="@mipmap/rightarrow"/>
+</LinearLayout>
+
+
+     <LinearLayout
+         android:id="@+id/loadingpanelmask"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/TMC_ProgressBar_Color"
+         android:alpha="0.85"
+         android:layout_centerInParent="true"
+         android:orientation="vertical"
+         android:visibility="gone" />
+
+     <LinearLayout
+         android:id="@+id/loadingPanel"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:gravity="center"
+         android:layout_centerInParent="true"
+         android:visibility="gone">
+
+         <com.wang.avi.AVLoadingIndicatorView
+             android:id="@+id/loadinganim_layout"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:visibility="visible"
+             android:layout_gravity="center"
+             app:indicatorColor="@color/TMC_Orange"
+             app:indicatorName="BallPulseIndicator" />
+
+     </LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

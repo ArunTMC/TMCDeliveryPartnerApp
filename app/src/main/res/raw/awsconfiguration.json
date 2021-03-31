@@ -1,0 +1,16 @@
+{
+
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "ap-south-1_9Wr1OQx2Y",
+            "AppClientId": "7cbj4jj85hq9083mesmc1trk3m",
+            "Region": "ap-south-1"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "authenticationFlowType": "CUSTOM_AUTH"
+        }
+    }
+
+}

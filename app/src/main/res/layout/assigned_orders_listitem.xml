@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/assignedItemLayout"
+        >
+
+        <LinearLayout
+            android:id="@+id/orderDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="Token No"
+                    android:textColor="@color/TMC_Orange"
+
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tokenNo_text_widget"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/TMC_Orange"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/orderItemDetails_text_widget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="Chicken Curry Cut * 500g (2) ,  Everest Ginger Powder * 100g (1)"
+                    android:textColor="@color/TMC_Orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="Order ID :"
+                    android:textColor="@color/TMC_Primary_Text_Color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/orderId_text_widget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="right"
+                    android:text="READY"
+                    android:textAllCaps="true"
+
+                    android:textColor="@color/TMC_Primary_Text_Color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="OrderStatus"
+                    android:textColor="@color/TMC_Primary_Text_Color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/orderStatus_text_widget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="right"
+                    android:text="READY"
+                    android:textAllCaps="true"
+
+                    android:textColor="@color/TMC_Primary_Text_Color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="PaymentMode"
+                    android:textColor="@color/TMC_Primary_Text_Color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/paymentMode_text_widget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="right"
+                    android:paddingStart="35dp"
+                    android:text="Cash_On_Delivery"
+                    android:textColor="@color/TMC_Primary_Text_Color"
+                    android:textSize="14sp" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/callLayout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="Customer MobileNo"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/TMC_Primary_Text_Color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/moblieNo_text_widget"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+
+                    android:fontFamily="@font/open_sans_semibold"
+
+                    android:text="9938473822"
+                    android:textColor="@color/TMC_Primary_Text_Color"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@mipmap/icon_trackorder_call"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight=".7"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="Distance between Shop and Customer : "
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/TMC_Primary_Text_Color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/km_text_widget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="right"
+                        android:text=" "
+                        android:textAllCaps="true"
+
+                        android:textColor="@color/TMC_Orange"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight=".7"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="Customer Address : "
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/TMC_Primary_Text_Color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/addressType_text_widget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="right"
+                        android:text=" "
+                        android:textAllCaps="true"
+
+                        android:textColor="@color/TMC_Orange"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/addressDetails_text_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="No 57, Rajendra Prasad Road\nHastinapuram,Chromepet\nChennai-600044"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/TMC_Primary_Text_Color"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/new_Order_Linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <Button
+                        android:id="@+id/pickup_Order_button_widget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+
+                        android:backgroundTint="@color/TMC_Button_background_Color"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="PickedUp"
+                        android:textAllCaps="true"
+
+                        android:textColor="@color/TMC_White"
+                        android:textSize="13sp" />
+
+                <Button
+                        android:id="@+id/delivered_button_widget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/TMC_Button_background_Color"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="Delivered"
+
+                        android:textAllCaps="true"
+                        android:textColor="@color/TMC_White"
+                        android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <Button
+                    android:id="@+id/openGoogleMap_Button_widget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/TMC_White"
+                    android:textSize="13sp"
+                    android:text="Route to Customer" />
+
+
+
+                <Button
+                    android:id="@+id/changePaymentMode_widget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="5"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textAllCaps="true"
+
+                    android:textColor="@color/TMC_White"
+                    android:textSize="13sp"
+                    android:text="Change Payment Mode"
+                    />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

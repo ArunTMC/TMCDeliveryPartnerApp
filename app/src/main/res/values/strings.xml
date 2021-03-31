@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">TMC Delivery Partner App</string>
+    //Login
+    <string name="Enter_the_mobile_no_text">Enter the Mobile Number</string>
+    <string name="UserInstructionText">Please Enter the 6-Digit Code which sent to you at </string>
+    <string name="Select_Vendor">Select Any One Vendor </string>
+
+
+    <string name="OTP_Info">We will send you One Time Password </string>
+    ///Otp_verification
+    <string name="Verify_Text">Verify </string>
+    <string name="UserInstructionTextOnOTP">Please Enter the 6-Digit Code which sent to your Number </string>
+
+
+    //DetailedOrderReport
+    <string name="Order_Details">Order Details</string>
+    <string name="Status">Status :   </string>
+    <string name="Time">Time </string>
+    <string name="Paid_amount">Paid Amount </string>
+    <string name="Change_Status">Change Status </string>
+
+    <string name="Loading_Order_Status">Loading Status </string>
+    <string name="Loading_OrderId">Loading Order Id</string>
+    <string name="Loading_MobileNo">Loading Mobile No</string>
+    <string name="Loading_TokenNo">Loading Token No</string>
+    <string name="Loading_Time">Loading Time </string>
+    <string name="Loading_Order_Details">Loading Order Details </string>
+    <string name="Loading_paid_Amount">Loading Paid Amount </string>
+    //
+    <string name="Choose_a_Category">Choose a Category</string>
+    <string name="Bill_Details">Bill Details </string>
+    <string name="Item_Total">Item Total </string>
+    <string name="Apply_Coupon">Apply Coupon </string>
+    <string name="Taxes_and_charges">GST </string>
+    <string name="To_Pay">To Pay </string>
+    <string name="Check_out"> Check Out </string>
+    <string name="CustomerName"> Name </string>
+    <string name="Customer_PhoneNumber">  Mobile No  </string>
+    <string name="Version_No">Version No : 1.1.6 </string>
+    <string name="StopSharingLocation">Stop Sharing Your Location</string>
+    <string name="Coupon_discount"> Discount </string>
+
+    ///Alertbox
+    <string name="Enter_Correct_No">Enter your Correct 10 digit Phone Number </string>
+    <string name="OK_Text">OK </string>
+    <string name="Cancel_Text">Cancel </string>
+    <string name="Yes_Text">Yes </string>
+    <string name="No_Text">No </string>
+
+    <string name="Exit_Instruction">Are you sure do you want to Exit now ? </string>
+    <string name="Change_Status_to_PickedUp">Do you want to Change the Status to PICKEDUP ? </string>
+    <string name="Change_Status_to_Delivered">Do you want to Change the Status to DELIVERED ? </string>
+
+    <string name="Enter_Correct_Password">Enter Correct Password </string>
+    <string name="Enter_Correct_OTP">Enter Correct Otp </string>
+    <string name="Enter_Password">Password Field Cannot be Empty </string>
+
+</resources>

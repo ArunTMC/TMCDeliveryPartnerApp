@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/dialog_paymentRadioGroup"
+                >
+
+
+                <RadioButton
+                    android:id="@+id/cashOnDelivery_radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash On Delivery" />
+
+                <RadioButton
+                    android:id="@+id/upi_radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phonepe" />
+
+
+            </RadioGroup>
+
+
+
+    <Button
+            android:id="@+id/dialog_changePaymentMode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+        android:background="@drawable/button_background"
+            android:text="Change Payment Mode" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

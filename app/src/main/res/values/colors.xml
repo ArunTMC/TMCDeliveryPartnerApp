@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="TMC_Primary_Text_Color">#000000</color>
+    <color name="TMC_Button_background_Color">#333333</color>
+
+    <color name="TMC_Orange_border">#FF5F22</color>
+    <color name="TMC_proressbar_mask_Color">#96908f</color>
+    <color name="TMC_Hint_Color">#EEEEEE</color>
+    <color name="TMC_Orange">#FF5F22</color>
+    <color name="TMC_White">#FFFFFFFF</color>
+
+
+    <color name="TMC_ProgressBar_Color">#333333</color>
+
+
+</resources>
